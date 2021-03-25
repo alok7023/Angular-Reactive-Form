@@ -1,7 +1,7 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+//import { HttpClientModule} from '@angular/common/http';
 import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,7 +11,7 @@ import { RegisterComponent } from './register/register.component';
     imports: [
         BrowserModule,
         ReactiveFormsModule,
-        HttpClientModule,
+        //HttpClientModule,
         appRoutingModule
     ],
     declarations: [
@@ -19,6 +19,7 @@ import { RegisterComponent } from './register/register.component';
         LoginComponent,
         RegisterComponent
     ],
+    providers: [], //services
     bootstrap: [AppComponent]
 })
-export class AppModule { };
+export class AppModule {};
